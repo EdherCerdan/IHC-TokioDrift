@@ -1,10 +1,19 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Control
+    - ControlWheel
+    - ControllerTutorial2
+    - Minimap
     - MoveGear
     - NetworkManagerCar
+    - NetworkManagerTutorial
     - SimpleCarController
     - SpeechRecognition
+    - SpeedBar
+    - TutorialMovePhone
+    - escena
+    - moveVirtualPhone
     Cinemachine.dll:
     - Cinemachine.CinemachineBasicMultiChannelPerlin
     - Cinemachine.CinemachineBrain
@@ -44,6 +53,7 @@ ScriptsOnlyBuild:
     - PoolObjectDef
     - PrefabReplacer
     - RotateOnAxis
+    - RotateOnAxisWheel
     - TakeScreenshot
     - TimeDisplayItem
     - TimeManager
@@ -103,6 +113,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
     - UnityEngine.UI.Outline
     - UnityEngine.UI.RawImage
     - UnityEngine.UI.Text
@@ -140,6 +151,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 90
@@ -153,43 +166,43 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11376}
+      Script: {instanceID: 11872}
     - Class: 114
-      Script: {instanceID: 11380}
+      Script: {instanceID: 11880}
     - Class: 114
-      Script: {instanceID: 11388}
+      Script: {instanceID: 11922}
     - Class: 114
-      Script: {instanceID: 12410}
+      Script: {instanceID: 12966}
     - Class: 114
-      Script: {instanceID: 12800}
+      Script: {instanceID: 13376}
     - Class: 114
-      Script: {instanceID: 13470}
+      Script: {instanceID: 14086}
     - Class: 114
-      Script: {instanceID: 13504}
+      Script: {instanceID: 14122}
     - Class: 114
-      Script: {instanceID: 13774}
+      Script: {instanceID: 14418}
     - Class: 114
-      Script: {instanceID: 13812}
+      Script: {instanceID: 14462}
     - Class: 114
-      Script: {instanceID: 13814}
+      Script: {instanceID: 14464}
     - Class: 114
-      Script: {instanceID: 14066}
+      Script: {instanceID: 14738}
     - Class: 114
-      Script: {instanceID: 14190}
+      Script: {instanceID: 14864}
     - Class: 114
-      Script: {instanceID: 14304}
+      Script: {instanceID: 14984}
     - Class: 114
-      Script: {instanceID: 14326}
+      Script: {instanceID: 15008}
     - Class: 114
-      Script: {instanceID: 14762}
+      Script: {instanceID: 15468}
     - Class: 114
-      Script: {instanceID: 14898}
+      Script: {instanceID: 15608}
     - Class: 114
-      Script: {instanceID: 15270}
+      Script: {instanceID: 16004}
     - Class: 114
-      Script: {instanceID: 15576}
+      Script: {instanceID: 16316}
     - Class: 114
-      Script: {instanceID: 15744}
+      Script: {instanceID: 16490}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 137
@@ -207,6 +220,8 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 258
+      Script: {instanceID: 0}
+    - Class: 850595691
       Script: {instanceID: 0}
     Assets/Karting/Scenes/LoseScene.unity:
     - Class: 1
@@ -228,29 +243,29 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11376}
+      Script: {instanceID: 11872}
     - Class: 114
-      Script: {instanceID: 11380}
+      Script: {instanceID: 11922}
     - Class: 114
-      Script: {instanceID: 12800}
+      Script: {instanceID: 13376}
     - Class: 114
-      Script: {instanceID: 13470}
+      Script: {instanceID: 14086}
     - Class: 114
-      Script: {instanceID: 13774}
+      Script: {instanceID: 14418}
     - Class: 114
-      Script: {instanceID: 13812}
+      Script: {instanceID: 14462}
     - Class: 114
-      Script: {instanceID: 14066}
+      Script: {instanceID: 14738}
     - Class: 114
-      Script: {instanceID: 14304}
+      Script: {instanceID: 14984}
     - Class: 114
-      Script: {instanceID: 14762}
+      Script: {instanceID: 15468}
     - Class: 114
-      Script: {instanceID: 14898}
+      Script: {instanceID: 15608}
     - Class: 114
-      Script: {instanceID: 15576}
+      Script: {instanceID: 16316}
     - Class: 114
-      Script: {instanceID: 15744}
+      Script: {instanceID: 16490}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -264,6 +279,8 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 258
+      Script: {instanceID: 0}
+    - Class: 850595691
       Script: {instanceID: 0}
     Assets/Karting/Scenes/MainScene.unity:
     - Class: 1
@@ -300,6 +317,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
     - Class: 91
@@ -311,159 +330,163 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11372}
+      Script: {instanceID: 11868}
     - Class: 114
-      Script: {instanceID: 11374}
+      Script: {instanceID: 11870}
     - Class: 114
-      Script: {instanceID: 11376}
+      Script: {instanceID: 11872}
     - Class: 114
-      Script: {instanceID: 11378}
+      Script: {instanceID: 11874}
     - Class: 114
-      Script: {instanceID: 11380}
+      Script: {instanceID: 11880}
     - Class: 114
-      Script: {instanceID: 11388}
+      Script: {instanceID: 11918}
     - Class: 114
-      Script: {instanceID: 11422}
+      Script: {instanceID: 11922}
     - Class: 114
-      Script: {instanceID: 11456}
+      Script: {instanceID: 11956}
     - Class: 114
-      Script: {instanceID: 11508}
+      Script: {instanceID: 12010}
     - Class: 114
-      Script: {instanceID: 11560}
+      Script: {instanceID: 12064}
     - Class: 114
-      Script: {instanceID: 11672}
+      Script: {instanceID: 12184}
     - Class: 114
-      Script: {instanceID: 11814}
+      Script: {instanceID: 12330}
     - Class: 114
-      Script: {instanceID: 11856}
+      Script: {instanceID: 12372}
     - Class: 114
-      Script: {instanceID: 11984}
+      Script: {instanceID: 12502}
     - Class: 114
-      Script: {instanceID: 12170}
+      Script: {instanceID: 12704}
     - Class: 114
-      Script: {instanceID: 12190}
+      Script: {instanceID: 12728}
     - Class: 114
-      Script: {instanceID: 12314}
+      Script: {instanceID: 12862}
     - Class: 114
-      Script: {instanceID: 12358}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 12438}
+      Script: {instanceID: 12996}
     - Class: 114
-      Script: {instanceID: 12450}
+      Script: {instanceID: 13006}
     - Class: 114
-      Script: {instanceID: 12544}
+      Script: {instanceID: 13106}
     - Class: 114
-      Script: {instanceID: 12646}
+      Script: {instanceID: 13158}
     - Class: 114
-      Script: {instanceID: 12664}
+      Script: {instanceID: 13212}
     - Class: 114
-      Script: {instanceID: 12666}
+      Script: {instanceID: 13232}
     - Class: 114
-      Script: {instanceID: 12668}
+      Script: {instanceID: 13234}
     - Class: 114
-      Script: {instanceID: 12684}
+      Script: {instanceID: 13236}
     - Class: 114
-      Script: {instanceID: 12754}
+      Script: {instanceID: 13252}
     - Class: 114
-      Script: {instanceID: 12762}
-    - Class: 114
-      Script: {instanceID: 12800}
-    - Class: 114
-      Script: {instanceID: 12802}
-    - Class: 114
-      Script: {instanceID: 12848}
-    - Class: 114
-      Script: {instanceID: 12924}
-    - Class: 114
-      Script: {instanceID: 13118}
-    - Class: 114
-      Script: {instanceID: 13144}
-    - Class: 114
-      Script: {instanceID: 13216}
-    - Class: 114
-      Script: {instanceID: 13254}
+      Script: {instanceID: 13328}
     - Class: 114
       Script: {instanceID: 13336}
     - Class: 114
-      Script: {instanceID: 13386}
+      Script: {instanceID: 13376}
     - Class: 114
-      Script: {instanceID: 13392}
+      Script: {instanceID: 13378}
     - Class: 114
-      Script: {instanceID: 13404}
+      Script: {instanceID: 13424}
     - Class: 114
       Script: {instanceID: 13504}
     - Class: 114
-      Script: {instanceID: 13580}
+      Script: {instanceID: 13746}
     - Class: 114
-      Script: {instanceID: 13774}
+      Script: {instanceID: 13822}
     - Class: 114
-      Script: {instanceID: 13812}
+      Script: {instanceID: 13862}
     - Class: 114
-      Script: {instanceID: 13814}
+      Script: {instanceID: 13942}
     - Class: 114
-      Script: {instanceID: 13966}
+      Script: {instanceID: 14002}
     - Class: 114
-      Script: {instanceID: 13998}
+      Script: {instanceID: 14008}
     - Class: 114
-      Script: {instanceID: 14022}
+      Script: {instanceID: 14020}
     - Class: 114
-      Script: {instanceID: 14056}
+      Script: {instanceID: 14122}
     - Class: 114
-      Script: {instanceID: 14142}
+      Script: {instanceID: 14206}
     - Class: 114
-      Script: {instanceID: 14164}
+      Script: {instanceID: 14418}
     - Class: 114
-      Script: {instanceID: 14304}
+      Script: {instanceID: 14462}
     - Class: 114
-      Script: {instanceID: 14332}
+      Script: {instanceID: 14464}
     - Class: 114
-      Script: {instanceID: 14392}
+      Script: {instanceID: 14628}
     - Class: 114
-      Script: {instanceID: 14400}
+      Script: {instanceID: 14660}
     - Class: 114
-      Script: {instanceID: 14442}
+      Script: {instanceID: 14686}
     - Class: 114
-      Script: {instanceID: 14472}
+      Script: {instanceID: 14718}
     - Class: 114
-      Script: {instanceID: 14648}
+      Script: {instanceID: 14724}
     - Class: 114
-      Script: {instanceID: 14762}
+      Script: {instanceID: 14836}
     - Class: 114
-      Script: {instanceID: 14800}
+      Script: {instanceID: 14984}
     - Class: 114
-      Script: {instanceID: 14804}
+      Script: {instanceID: 15014}
     - Class: 114
-      Script: {instanceID: 14866}
+      Script: {instanceID: 15072}
     - Class: 114
-      Script: {instanceID: 14898}
+      Script: {instanceID: 15080}
     - Class: 114
-      Script: {instanceID: 14918}
+      Script: {instanceID: 15122}
     - Class: 114
-      Script: {instanceID: 14952}
+      Script: {instanceID: 15156}
     - Class: 114
-      Script: {instanceID: 15020}
+      Script: {instanceID: 15350}
     - Class: 114
-      Script: {instanceID: 15124}
+      Script: {instanceID: 15468}
     - Class: 114
-      Script: {instanceID: 15198}
+      Script: {instanceID: 15510}
     - Class: 114
-      Script: {instanceID: 15336}
+      Script: {instanceID: 15514}
     - Class: 114
-      Script: {instanceID: 15366}
+      Script: {instanceID: 15574}
     - Class: 114
-      Script: {instanceID: 15476}
+      Script: {instanceID: 15608}
     - Class: 114
-      Script: {instanceID: 15560}
+      Script: {instanceID: 15628}
     - Class: 114
-      Script: {instanceID: 15684}
+      Script: {instanceID: 15662}
     - Class: 114
-      Script: {instanceID: 15744}
+      Script: {instanceID: 15732}
     - Class: 114
-      Script: {instanceID: 15778}
+      Script: {instanceID: 15814}
     - Class: 114
-      Script: {instanceID: 15780}
+      Script: {instanceID: 15834}
     - Class: 114
-      Script: {instanceID: 15866}
+      Script: {instanceID: 15848}
+    - Class: 114
+      Script: {instanceID: 15928}
+    - Class: 114
+      Script: {instanceID: 16080}
+    - Class: 114
+      Script: {instanceID: 16110}
+    - Class: 114
+      Script: {instanceID: 16218}
+    - Class: 114
+      Script: {instanceID: 16300}
+    - Class: 114
+      Script: {instanceID: 16428}
+    - Class: 114
+      Script: {instanceID: 16490}
+    - Class: 114
+      Script: {instanceID: 16528}
+    - Class: 114
+      Script: {instanceID: 16530}
+    - Class: 114
+      Script: {instanceID: 16626}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -482,6 +505,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
     - Class: 222
@@ -499,6 +524,277 @@ ScriptsOnlyBuild:
     - Class: 245
       Script: {instanceID: 0}
     - Class: 320
+      Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
+    Assets/Karting/Scenes/Tutorial1.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 72
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11872}
+    - Class: 114
+      Script: {instanceID: 11880}
+    - Class: 114
+      Script: {instanceID: 11922}
+    - Class: 114
+      Script: {instanceID: 13376}
+    - Class: 114
+      Script: {instanceID: 14086}
+    - Class: 114
+      Script: {instanceID: 14122}
+    - Class: 114
+      Script: {instanceID: 14404}
+    - Class: 114
+      Script: {instanceID: 14418}
+    - Class: 114
+      Script: {instanceID: 14462}
+    - Class: 114
+      Script: {instanceID: 14464}
+    - Class: 114
+      Script: {instanceID: 14738}
+    - Class: 114
+      Script: {instanceID: 14864}
+    - Class: 114
+      Script: {instanceID: 14984}
+    - Class: 114
+      Script: {instanceID: 15468}
+    - Class: 114
+      Script: {instanceID: 15608}
+    - Class: 114
+      Script: {instanceID: 16202}
+    - Class: 114
+      Script: {instanceID: 16316}
+    - Class: 114
+      Script: {instanceID: 16490}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
+    Assets/Karting/Scenes/Tutorial2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11872}
+    - Class: 114
+      Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 11922}
+    - Class: 114
+      Script: {instanceID: 12064}
+    - Class: 114
+      Script: {instanceID: 12564}
+    - Class: 114
+      Script: {instanceID: 12966}
+    - Class: 114
+      Script: {instanceID: 13130}
+    - Class: 114
+      Script: {instanceID: 13232}
+    - Class: 114
+      Script: {instanceID: 13376}
+    - Class: 114
+      Script: {instanceID: 13580}
+    - Class: 114
+      Script: {instanceID: 14418}
+    - Class: 114
+      Script: {instanceID: 14462}
+    - Class: 114
+      Script: {instanceID: 14738}
+    - Class: 114
+      Script: {instanceID: 14896}
+    - Class: 114
+      Script: {instanceID: 14974}
+    - Class: 114
+      Script: {instanceID: 14984}
+    - Class: 114
+      Script: {instanceID: 15468}
+    - Class: 114
+      Script: {instanceID: 15608}
+    - Class: 114
+      Script: {instanceID: 15732}
+    - Class: 114
+      Script: {instanceID: 16080}
+    - Class: 114
+      Script: {instanceID: 16490}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Karting/Scenes/Tutorial3.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11872}
+    - Class: 114
+      Script: {instanceID: 12372}
+    - Class: 114
+      Script: {instanceID: 13376}
+    - Class: 114
+      Script: {instanceID: 14008}
+    - Class: 114
+      Script: {instanceID: 14206}
+    - Class: 114
+      Script: {instanceID: 14418}
+    - Class: 114
+      Script: {instanceID: 14482}
+    - Class: 114
+      Script: {instanceID: 14686}
+    - Class: 114
+      Script: {instanceID: 14732}
+    - Class: 114
+      Script: {instanceID: 14738}
+    - Class: 114
+      Script: {instanceID: 14984}
+    - Class: 114
+      Script: {instanceID: 15122}
+    - Class: 114
+      Script: {instanceID: 15468}
+    - Class: 114
+      Script: {instanceID: 15608}
+    - Class: 114
+      Script: {instanceID: 16428}
+    - Class: 114
+      Script: {instanceID: 16490}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 146
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    - Class: 850595691
       Script: {instanceID: 0}
     Assets/Karting/Scenes/WinScene.unity:
     - Class: 1
@@ -520,29 +816,29 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11376}
+      Script: {instanceID: 11872}
     - Class: 114
-      Script: {instanceID: 11380}
+      Script: {instanceID: 11922}
     - Class: 114
-      Script: {instanceID: 12800}
+      Script: {instanceID: 13376}
     - Class: 114
-      Script: {instanceID: 13470}
+      Script: {instanceID: 14086}
     - Class: 114
-      Script: {instanceID: 13774}
+      Script: {instanceID: 14418}
     - Class: 114
-      Script: {instanceID: 13812}
+      Script: {instanceID: 14462}
     - Class: 114
-      Script: {instanceID: 14066}
+      Script: {instanceID: 14738}
     - Class: 114
-      Script: {instanceID: 14304}
+      Script: {instanceID: 14984}
     - Class: 114
-      Script: {instanceID: 14762}
+      Script: {instanceID: 15468}
     - Class: 114
-      Script: {instanceID: 14898}
+      Script: {instanceID: 15608}
     - Class: 114
-      Script: {instanceID: 15576}
+      Script: {instanceID: 16316}
     - Class: 114
-      Script: {instanceID: 15744}
+      Script: {instanceID: 16490}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -556,6 +852,8 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 258
+      Script: {instanceID: 0}
+    - Class: 850595691
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -572,22 +870,16 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: 89f9a1b4c64db9559e39f4a2e3bfaadd
+      Hash: a6e561615949734e9f12f9b61661f43e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
   - hash:
       serializedVersion: 2
-      Hash: 5ad4aa237d47ac2bab17bacb672edf7a
+      Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: HorizontalLayoutGroup
-  - hash:
-      serializedVersion: 2
-      Hash: 4bc4346a71a8df53a6b106f68ef3a190
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: CanvasScaler
   - hash:
       serializedVersion: 2
       Hash: a1f19ad47d3094e235f21b74dfc423a8
@@ -596,10 +888,16 @@ ScriptsOnlyBuild:
     className: PostProcessLayer
   - hash:
       serializedVersion: 2
-      Hash: dac362aec30e75b5bdfe3eea60cdf384
+      Hash: 016664814c823cfc5ac199e835dc335b
     assemblyName: Mirror.dll
     namespaceName: Mirror
     className: TelepathyTransport
+  - hash:
+      serializedVersion: 2
+      Hash: 4bc4346a71a8df53a6b106f68ef3a190
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
   - hash:
       serializedVersion: 2
       Hash: 23d669c8bf2983ca4a3df160658318a6
@@ -620,7 +918,7 @@ ScriptsOnlyBuild:
     className: LensDistortion
   - hash:
       serializedVersion: 2
-      Hash: c42672c997f8be6b1aa86a927ebea785
+      Hash: f40fedccd4adbc76605bea6d67537e4b
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SelectionCaret
@@ -632,7 +930,7 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: b4fc42b020df4b67385e61ff21d513cc
+      Hash: 4298152c7490141086c39d1836a5a43a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
@@ -752,7 +1050,7 @@ ScriptsOnlyBuild:
     className: SelectionRoot
   - hash:
       serializedVersion: 2
-      Hash: aeb62f729c52c814dec86c47dcac1471
+      Hash: 699619b86d9359741a4f58540298c80b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Text
@@ -764,7 +1062,7 @@ ScriptsOnlyBuild:
     className: Monitor
   - hash:
       serializedVersion: 2
-      Hash: 499fd23433e68e265d153aa6b95d0047
+      Hash: fd8b23ad3c9e81bc85b197495bc510ac
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Scrollbar
@@ -812,7 +1110,7 @@ ScriptsOnlyBuild:
     className: TakeScreenshot
   - hash:
       serializedVersion: 2
-      Hash: 234d407605354852c48e57df17c9a1c6
+      Hash: 5f206dd3b0d6b103c9456019be49d644
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_InputField
@@ -822,6 +1120,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.ProBuilder.dll
     namespaceName: UnityEngine.ProBuilder
     className: PolyShape
+  - hash:
+      serializedVersion: 2
+      Hash: 43d318c27920bea063ae60b04577489f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TutorialMovePhone
   - hash:
       serializedVersion: 2
       Hash: 89cbcfa77989979e1843b899c81094a8
@@ -884,7 +1188,7 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
-      Hash: 1cb3ae0a2d707e19133c67f4ce57102f
+      Hash: 722db79dbdb0c1c9dabecbef77bc1797
     assemblyName: Mirror.Cloud.dll
     namespaceName: Mirror.Cloud
     className: ApiConnector
@@ -968,37 +1272,37 @@ ScriptsOnlyBuild:
     className: KartAgent
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: ef5c43f921427d03730f6ea4c848f07d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RectMask2D
   - hash:
       serializedVersion: 2
-      Hash: d7bf03fa810c9d4b52d4496bc8a43815
+      Hash: 387b0f327bf03d74ebb3c29ed5937262
     assemblyName: Mirror.Websocket.dll
     namespaceName: Mirror.Websocket
     className: WebsocketTransport
   - hash:
       serializedVersion: 2
-      Hash: 4897f5a226d42459f106a93afe05a2dd
+      Hash: eb5102ddc4a8aff6f43dfa2ddbee0ead
     assemblyName: KartGame.dll
     namespaceName: 
     className: RotateOnAxis
   - hash:
       serializedVersion: 2
-      Hash: 1103fb0758976355cdf9b7d5ce9cb7e0
+      Hash: 6980e81ddc615a861309d2d659cc3760
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: 15c55754525a30a67503e1ec51497660
+      Hash: 8e95b2b9bddd44a4a603e0164fd7da70
     assemblyName: KartGame.dll
     namespaceName: KartGame.KartSystems
     className: ArcadeKart
   - hash:
       serializedVersion: 2
-      Hash: 1adf292136fa277a73bfa6421602b9e3
+      Hash: ef50859040b18c5457bc50f6a3cd0493
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NetworkManagerCar
@@ -1022,7 +1326,7 @@ ScriptsOnlyBuild:
     className: DemonstrationRecorder
   - hash:
       serializedVersion: 2
-      Hash: 666a1bc8d46f314c018ffaaa3f6628d1
+      Hash: ae20da6493a48ec6a8af7899dcb31507
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineFreeLook
@@ -1038,6 +1342,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.ProBuilder.dll
     namespaceName: UnityEngine.ProBuilder
     className: BezierShape
+  - hash:
+      serializedVersion: 2
+      Hash: e7702c472e77ef7ca3eb938beb754a3b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ControllerTutorial2
   - hash:
       serializedVersion: 2
       Hash: 192ca9716d03752ea1d90a78bc2daac9
@@ -1058,7 +1368,7 @@ ScriptsOnlyBuild:
     className: MainUIController
   - hash:
       serializedVersion: 2
-      Hash: 071d93f3e16645b8ca72486802a5b912
+      Hash: 083eba9bfa137d3541591a9c79dea11a
     assemblyName: Mirror.dll
     namespaceName: Mirror
     className: MultiplexTransport
@@ -1082,7 +1392,7 @@ ScriptsOnlyBuild:
     className: CinemachinePostProcessing
   - hash:
       serializedVersion: 2
-      Hash: c56a9426da8f5d94d45fd88dc881ef1b
+      Hash: bc376136b71b554afa8af35a037999c1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MoveGear
@@ -1208,6 +1518,12 @@ ScriptsOnlyBuild:
     className: Tank
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: escena
+  - hash:
+      serializedVersion: 2
       Hash: 380d3ba99e2d836ad5d66bded133d128
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -1242,12 +1558,6 @@ ScriptsOnlyBuild:
     assemblyName: KartGame.dll
     namespaceName: 
     className: PrefabReplacerOnInstance
-  - hash:
-      serializedVersion: 2
-      Hash: 3fabaa1ca3438a62537e689c2f411026
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SimpleCarController
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1298,13 +1608,13 @@ ScriptsOnlyBuild:
     className: Capsule
   - hash:
       serializedVersion: 2
-      Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
+      Hash: 040dd48e3a027d5424519a5fa2009df4
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 7ca765ad7969aae95e8011264b9c4046
+      Hash: e78709e690dc77916f3252ffe12b9d1f
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineTriggerAction
@@ -1370,16 +1680,10 @@ ScriptsOnlyBuild:
     className: KartAcademy
   - hash:
       serializedVersion: 2
-      Hash: 702330b33d6f348f76db0c974f6e02c3
+      Hash: b5cdb5258d55ddfa2beedfa44db3e720
     assemblyName: Mirror.Authenticators.dll
     namespaceName: Mirror.Authenticators
     className: BasicAuthenticator
-  - hash:
-      serializedVersion: 2
-      Hash: 47b98ce45515fe1a08649046c97489a6
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GetPhoneInput
   - hash:
       serializedVersion: 2
       Hash: 15882a52798c275361cd0a3ada984ec5
@@ -1466,7 +1770,13 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 5f1752ed2092162f016c19510c28a8b9
+      Hash: ca81e1e7bb70b395ddca819fc4595f9c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Control
+  - hash:
+      serializedVersion: 2
+      Hash: f087c23fbfa15475a0d110af46fb0496
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
@@ -1478,7 +1788,7 @@ ScriptsOnlyBuild:
     className: Reward
   - hash:
       serializedVersion: 2
-      Hash: f84d945e5e1ca985698660fc26e9657f
+      Hash: c1d728126ff1918728036c59106d32b2
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
@@ -1490,10 +1800,16 @@ ScriptsOnlyBuild:
     className: ArcadeEngineAudio
   - hash:
       serializedVersion: 2
-      Hash: 52054571faa2df4709dc67227b8153a0
+      Hash: c25eddb22332d79a1ed1d6380a2e5e1d
     assemblyName: Mirror.dll
     namespaceName: Mirror
     className: LLAPITransport
+  - hash:
+      serializedVersion: 2
+      Hash: 3fabaa1ca3438a62537e689c2f411026
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SimpleCarController
   - hash:
       serializedVersion: 2
       Hash: 56df1fa7cea034df9863fe5a24200a32
@@ -1538,7 +1854,7 @@ ScriptsOnlyBuild:
     className: PoolObjectDef
   - hash:
       serializedVersion: 2
-      Hash: 5ad4aa237d47ac2bab17bacb672edf7a
+      Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
@@ -1550,16 +1866,28 @@ ScriptsOnlyBuild:
     className: CinemachineTransposer
   - hash:
       serializedVersion: 2
-      Hash: c338485bc5348269f990c012525c3295
+      Hash: 1bb8cc08567caea02a76981c85ee6063
     assemblyName: KartGame.dll
     namespaceName: 
     className: ArcadeKartPowerup
+  - hash:
+      serializedVersion: 2
+      Hash: 03afa1bf22951d54c65672ad93a484e2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpeedBar
   - hash:
       serializedVersion: 2
       Hash: a2332d017a70ad2821c9cf45872e583a
     assemblyName: KartGame.dll
     namespaceName: KartGame.Track
     className: TimeDisplay
+  - hash:
+      serializedVersion: 2
+      Hash: e9beab7d1d335fb282ba10e0bfe1d12b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpeechRecognition
   - hash:
       serializedVersion: 2
       Hash: 2e8591ed05ccd0a04f3538adf80f0857
@@ -1584,12 +1912,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.ProBuilder.dll
     namespaceName: UnityEngine.ProBuilder
     className: ColorPalette
-  - hash:
-      serializedVersion: 2
-      Hash: e9beab7d1d335fb282ba10e0bfe1d12b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SpeechRecognition
   - hash:
       serializedVersion: 2
       Hash: e6d75f1a9bc0c6f7085df0baa077e688
@@ -1634,13 +1956,19 @@ ScriptsOnlyBuild:
     className: AdditiveNetworkManager
   - hash:
       serializedVersion: 2
-      Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
+      Hash: 1adf292136fa277a73bfa6421602b9e3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NetworkManagerTutorial
+  - hash:
+      serializedVersion: 2
+      Hash: f7bb6096199e0cf058d5d69878184cf4
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: InputField
   - hash:
       serializedVersion: 2
-      Hash: c9a8b80298a116835b51ba1cf9284367
+      Hash: 908b3077da284d11de0450423ca1808e
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalReceiver
@@ -1650,6 +1978,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineMixingCamera
+  - hash:
+      serializedVersion: 2
+      Hash: ff2dff1745a44314e3366d50874cee42
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: moveVirtualPhone
   - hash:
       serializedVersion: 2
       Hash: dd1544de412f92b32f1c6671123b3745
@@ -1712,7 +2046,7 @@ ScriptsOnlyBuild:
     className: ObjectiveToast
   - hash:
       serializedVersion: 2
-      Hash: 91835d5ad99155431c21b3b548706002
+      Hash: 93827904d1237a324c550ba2fe498ea8
     assemblyName: Mirror.Authenticators.dll
     namespaceName: Mirror.Authenticators
     className: TimeoutAuthenticator
@@ -1736,7 +2070,7 @@ ScriptsOnlyBuild:
     className: VersionDisplay
   - hash:
       serializedVersion: 2
-      Hash: df76de5fb2b27007d514fdb38b91cf89
+      Hash: c8f1a224e0a43adc56c91864de822dd3
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineVirtualCamera
@@ -1808,13 +2142,13 @@ ScriptsOnlyBuild:
     className: CinemachineImpulseSource
   - hash:
       serializedVersion: 2
-      Hash: 071d93f3e16645b8ca72486802a5b912
+      Hash: 083eba9bfa137d3541591a9c79dea11a
     assemblyName: Mirror.dll
     namespaceName: Mirror
     className: FallbackTransport
   - hash:
       serializedVersion: 2
-      Hash: 6939772cb3ce775a8e8d99f332534491
+      Hash: 760787567e1b60d64a3e421ab83ee14a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshProUGUI
@@ -1826,7 +2160,7 @@ ScriptsOnlyBuild:
     className: CinemachineVolumeSettings
   - hash:
       serializedVersion: 2
-      Hash: c56ffb3706445e6f255668a501f8d3e0
+      Hash: 4603f47d8043ac79f4a8a624c0a5d3ff
     assemblyName: KartGame.dll
     namespaceName: KartGame.KartSystems
     className: KeyboardInput
@@ -1868,7 +2202,7 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 02e9893c6810fd2ae60a69652afe1367
+      Hash: 16feca0687e25ab1a7eb4cda08a122c6
     assemblyName: KartGame.dll
     namespaceName: 
     className: GameFlowManager
@@ -1922,10 +2256,22 @@ ScriptsOnlyBuild:
     className: CrashObject
   - hash:
       serializedVersion: 2
+      Hash: 908c7e44e811d6f01c97f01626953726
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ControlWheel
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Mirror.Examples.dll
     namespaceName: Mirror.Examples.MultipleAdditiveScenes
     className: PhysicsSimulator
+  - hash:
+      serializedVersion: 2
+      Hash: 65b3a3b9a7779d539ec75a3ceddebdba
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Minimap
   - hash:
       serializedVersion: 2
       Hash: 2946855c7033988d0daf1653366227eb
@@ -1946,7 +2292,7 @@ ScriptsOnlyBuild:
     className: NetworkDiscoveryHUD
   - hash:
       serializedVersion: 2
-      Hash: 98e198b5d5b11da1157866bcf2d0625a
+      Hash: 98f00ab90f3fb7f06109b4fb14b4931c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SimpleTrigger
@@ -2018,6 +2364,12 @@ ScriptsOnlyBuild:
     className: UITable
   - hash:
       serializedVersion: 2
+      Hash: 0a434540fd4a65b97a0d31f1b5e26dca
+    assemblyName: KartGame.dll
+    namespaceName: 
+    className: RotateOnAxisWheel
+  - hash:
+      serializedVersion: 2
       Hash: d5630f96bd5a6a6eed7e1754c3fb8703
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
@@ -2030,7 +2382,7 @@ ScriptsOnlyBuild:
     className: Grain
   - hash:
       serializedVersion: 2
-      Hash: 8cd1cbba27f3cb1717254f668e9e0d5a
+      Hash: a2612813f45d0ced02c3e4bc9dbea8b4
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshPro
@@ -2042,7 +2394,7 @@ ScriptsOnlyBuild:
     className: TMP_ColorGradient
   - hash:
       serializedVersion: 2
-      Hash: 999114b81b16350120dede9aabe37fe4
+      Hash: 33c6014cf5876cd3034b3e043889dd98
     assemblyName: Mirror.Components.dll
     namespaceName: Mirror.Discovery
     className: NetworkDiscovery
@@ -2090,7 +2442,7 @@ ScriptsOnlyBuild:
     className: PlayerScore
   - hash:
       serializedVersion: 2
-      Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
+      Hash: 134322c9293c1896357cce271b819ce4
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
@@ -2114,19 +2466,19 @@ ScriptsOnlyBuild:
     className: TestRunCallbackListener
   - hash:
       serializedVersion: 2
-      Hash: 1351a1bf2c4086539cf0063006375478
+      Hash: 62824bb9557c7e987502f2fbd2a26819
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineBrain
   - hash:
       serializedVersion: 2
-      Hash: 4ef0f7d42cdb13479386e1f049c315aa
+      Hash: c60c5cba0d5ed4f4a018240d6339217f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
   - hash:
       serializedVersion: 2
-      Hash: 2aeeec1b1a144c469cd2d37776bc2315
+      Hash: 0fd689b29ca4e350893b80d82ac126b1
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Dropdown
@@ -2156,7 +2508,7 @@ ScriptsOnlyBuild:
     className: CinemachineBasicMultiChannelPerlin
   - hash:
       serializedVersion: 2
-      Hash: aa88ae22474df55295327e4ee99e5a24
+      Hash: 0ffaf073d4b1fa4e8036cf7ad52ddba7
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Toggle
@@ -2174,7 +2526,7 @@ ScriptsOnlyBuild:
     className: CinemachineClearShot
   - hash:
       serializedVersion: 2
-      Hash: 7072231382eb3c4871b3dd75ad0227e1
+      Hash: 0c05f2bfb402def3f0a85a62a2323c7f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Slider
@@ -2214,5 +2566,8 @@ ScriptsOnlyBuild:
   - Assets/Karting/Scenes/MainScene.unity
   - Assets/Karting/Scenes/LoseScene.unity
   - Assets/Karting/Scenes/WinScene.unity
-  playerPath: D:/UCSP/Semestres/Semestre_VIII/IHC/IHC-TokioDrift/TokioDrift/Builds/Kart
-    game/New Unity Project.exe
+  - Assets/Karting/Scenes/Tutorial2.unity
+  - Assets/Karting/Scenes/Tutorial1.unity
+  - Assets/Karting/Scenes/Tutorial3.unity
+  playerPath: D:/UCSP/Semestres/Semestre_VIII/IHC/IHC-TokioDrift/TokioDrift3/Build/New
+    Unity Project.exe

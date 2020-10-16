@@ -41,7 +41,7 @@ public class TimeManager : MonoBehaviour
 
     private void SetTime(int time, bool isFinite, GameMode gameMode)
     {
-        TotalTime = time;
+        TotalTime = 180;
         IsFinite = isFinite;
         TimeRemaining = TotalTime;
     }

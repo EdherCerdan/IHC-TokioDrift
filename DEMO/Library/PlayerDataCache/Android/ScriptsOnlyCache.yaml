@@ -230,7 +230,7 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
-      Hash: 8cec5ed8679daed48751f9892299c220
+      Hash: 87590ee106f9f01cd16d458b57e03315
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NetworkManagerPhone
@@ -806,7 +806,7 @@ ScriptsOnlyBuild:
     className: NetworkLogSettings
   - hash:
       serializedVersion: 2
-      Hash: d790e43a2f37c1e513e3c674a34dcdf5
+      Hash: e1053abfe694d030818eac5d6f4c1548
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MoveGear

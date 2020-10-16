@@ -11,16 +11,18 @@ public class RotateOnAxisWheel : MonoBehaviour
 	[Tooltip("Applies a rotation of eulerAngles.z degrees around the z-axis, eulerAngles.x degrees around the x-axis, and eulerAngles.y degrees around the y-axis (in that order).")]
 	public Vector3 rotationSpeed;
 	public bool rotate;
+	//public GameObject state;
 	Thread receiveThread; //1
 	UdpClient client; //2
 	int port; //3
-
+	//public bool nextTutorial2;
 	public int ejex;
 
 	void Start()
 	{
 		port = 5065; //1 
 		ejex = 0;
+		//nextTutorial2 = true;
 		InitUDP(); //4
 	}
 
@@ -33,7 +35,7 @@ public class RotateOnAxisWheel : MonoBehaviour
 		receiveThread.Start(); //3
 	}
 
-
+	
 	private void ReceiveData()
 	{
         try
@@ -52,7 +54,7 @@ public class RotateOnAxisWheel : MonoBehaviour
 				byte[] data = client.Receive(ref anyIP); //4
 
 				string text = Encoding.UTF8.GetString(data); //5
-				print(">> " + text);
+				//print(">> " + text);
 
 				if (String.Equals(text, "straight"))
 				{
@@ -78,8 +80,17 @@ public class RotateOnAxisWheel : MonoBehaviour
 			}
 		}
 	}
-
-
+	
+	private void stopThread()
+    {
+        if (receiveThread.IsAlive)
+        {
+            receiveThread.Abort();
+        }
+        client.Close();
+    	print("cerrado client");
+    }
+    
 	void Update()
 	{
 		transform.Rotate(ejex * rotationSpeed);
@@ -89,6 +100,18 @@ public class RotateOnAxisWheel : MonoBehaviour
         	transform.eulerAngles = new Vector3(0, 0, 0);
         }
         */
-		print(transform.eulerAngles.y);
+		//print(transform.eulerAngles.y);
+		/*if(state.GetComponent<KartGame.UI.LoadSceneButton>().nextTutorial1 && nextTutorial2)
+		{
+			print("hola");
+			stopThread();
+			nextTutorial2 = false;	
+		} */
 	}
+	
+	 void OnDestroy()
+	{
+	 	stopThread(); 	 
+	}
+   
 }

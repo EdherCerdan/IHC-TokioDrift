@@ -96,5 +96,4 @@ public class MoveGear : NetworkBehaviour
         if(currentScene != "Tutorial2")
             speedText.text = "0";
     }
-
 }
