@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.Playables;
 using KartGame.KartSystems;
 using UnityEngine.SceneManagement;
+//using Mirror;
 
 public enum GameState{Play, Won, Lost}
 
@@ -153,6 +154,9 @@ public class GameFlowManager : MonoBehaviour
         // unlocks the cursor before leaving the scene, to be able to click buttons
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+
+        //NetworkManager.GetComponent<NetworkManagerCar>.StopServer();
+        //NetworkManager.GetComponent<TurnItOff>().StopServer();
 
         m_TimeManager.StopRace();
 

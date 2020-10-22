@@ -17,7 +17,7 @@ public class ControlWheel : MonoBehaviour
 
     private bool stateChange;
 
-    void Start()
+    void Start() 
     {
         stateChange = false;
     }

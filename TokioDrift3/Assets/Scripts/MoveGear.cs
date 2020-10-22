@@ -70,11 +70,11 @@ public class MoveGear : NetworkBehaviour
                 else if (plainSpeed.x >= 0.2f)
                     currentSpeed = 1;
             } else {
-                if (plainSpeed.x <= -0.4f)
+                if (plainSpeed.x <= -0.3f)
                     currentSpeed = -2;
-                else if (plainSpeed.x <= -0.3f)
-                    currentSpeed = -1;
                 else if (plainSpeed.x <= -0.2f)
+                    currentSpeed = -1;
+                else if (plainSpeed.x <= -0.15f)
                     currentSpeed = -0.5f;
                 else
                     currentSpeed = 0;
@@ -93,7 +93,13 @@ public class MoveGear : NetworkBehaviour
 
     void OnDestroy()
     {
-        if(currentScene != "Tutorial2")
-            speedText.text = "0";
+        try
+        {
+            if(currentScene != "Tutorial2")
+                speedText.text = "0";
+        } catch(Exception e)
+        {
+            print("Object has already been deleted");
+        }
     }
 }
