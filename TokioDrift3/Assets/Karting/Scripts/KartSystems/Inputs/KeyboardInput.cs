@@ -15,19 +15,21 @@ namespace KartGame.KartSystems
 		public string Horizontal = "Horizontal";
 		public string Vertical = "Vertical";
 		public bool StateDetect;
-
+		private int stateWheel;
+		
 		Thread receiveThread; //1
 		UdpClient client; //2
 		int port; //3
 
-		public int ejex;
+		public double ejex;
 
 		void Start()
 		{
 			port = 5065; //1 
-			ejex = 0;
+			ejex = 0.0;
 			InitUDP(); //4
 			StateDetect = false;
+			stateWheel = PlayerPrefs.GetInt("wheel");
 		}
 
 
@@ -42,6 +44,7 @@ namespace KartGame.KartSystems
 
 		private void ReceiveData()
 		{
+			
 			try
 			{
 				client = new UdpClient(port); //1
@@ -52,8 +55,10 @@ namespace KartGame.KartSystems
 				print("Default Port busy, created in another one");
 				client = new UdpClient(50003);
 			}
+			int angulo;
 			while (true) //2
 			{
+				
 				try
 				{
 					IPEndPoint anyIP = new IPEndPoint(IPAddress.Parse("0.0.0.0"), port); //3
@@ -61,8 +66,45 @@ namespace KartGame.KartSystems
 
 					string text = Encoding.UTF8.GetString(data); //5
 					print(">> " + text);
-
-					if (String.Equals(text, "straight"))
+					if(text == "not"){
+						angulo = -1;					
+					}else{
+						angulo = int.Parse(text);
+					}
+					
+					
+					if(angulo != -1)
+					{
+						if(angulo > 85 && angulo < 95){
+							ejex = 0.0;
+							StateDetect = true;
+						}else if (angulo > 60 && angulo <= 85 ){
+							ejex = 0.125;
+							StateDetect = true;
+						}else if (angulo >= 95 && angulo <= 120){
+							ejex = -0.125;
+							StateDetect = true;
+						}else if (angulo > 30 && angulo <= 60){
+							ejex = 0.25;
+							StateDetect = true;
+						}else if (angulo > 120 && angulo <= 140){
+							ejex = -0.25;
+							StateDetect = true;
+						}else if (angulo <= 30 ){
+							ejex = 0.5;
+							StateDetect = true;
+						}else if (angulo > 140 ){
+							ejex = -0.5;
+							StateDetect = true;
+						}
+					
+					}else{
+						ejex = 0;
+						StateDetect = false;
+					}	
+					
+						
+					/*if (String.Equals(text, "straight"))
 					{
 						ejex = 0;
 						StateDetect = true;
@@ -81,7 +123,7 @@ namespace KartGame.KartSystems
 					{
 						ejex = 0;
 						StateDetect = false;
-					}
+					}*/
 
 				}
 				catch (Exception e)
@@ -97,13 +139,25 @@ namespace KartGame.KartSystems
 
 		public override Vector2 GenerateInput()
 		{
-
+			
 			return new Vector2
 			{
-				x = ejex,
+				
+				//x = (float)ejex,
 				//x = Input.GetAxis(Horizontal),
+				x = calculateX(),
 				y = Input.GetAxis(Vertical)
 			};
 		}
+		
+		public float calculateX(){
+		
+			if(stateWheel==1){
+				return 	(float)ejex;
+			}else{
+				return Input.GetAxis(Horizontal);
+			}
+		}
 	}
-}
+}	
+	

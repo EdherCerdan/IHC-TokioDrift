@@ -18,6 +18,9 @@ public class Control : MonoBehaviour
     public GameObject TextFinal;
     public GameObject ButtonNextTutorial;
 
+	public GameObject TextDetect;
+	public GameObject TextNoDetect;
+	
     private bool stateChange;
     private int state;
     private int cont;
@@ -48,6 +51,14 @@ public class Control : MonoBehaviour
             ImageRight.SetActive(false);
             ImageWrong.SetActive(false);
         }
+        if(Car.GetComponent<RotateOnAxisWheel>().StateDetect){
+        	TextDetect.SetActive(true);
+        	TextNoDetect.SetActive(false);
+        }else{
+        	TextDetect.SetActive(false);
+        	TextNoDetect.SetActive(true);
+        }
+        
         ImageSteeringWheel.transform.eulerAngles = new Vector3(0, 0, -1 * Car.transform.eulerAngles.y);
         if (state == 0)
         {//voltear a la derecha

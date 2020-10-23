@@ -17,8 +17,8 @@ last = []
 video = VideoStream(src=0).start()
 frame = None
 
-lb = [41, 102, 135]
-rb = [159, 255, 255]
+lb = [40, 72, 0]
+rb = [137, 255, 255]
 
 
 def set_lb(i, v):
@@ -47,6 +47,9 @@ actions = ["", ""]
 #cv2.createTrackbar('upper_b_1', 'mask', rb[1], 255, (lambda a: set_rb(1, a)))
 #cv2.createTrackbar('upper_b_2', 'mask', rb[2], 255, (lambda a: set_rb(2, a)))
 
+def sendData(slope):
+	sock.sendto( (str(int(slope))).encode(), (UDP_IP, UDP_PORT) )
+	print("angulo:: " + str(int(slope)) ) 
 
 def steer(slope):
     if 85 <= slope <= 95:
@@ -81,7 +84,7 @@ def process_wheel():
     mask = cv2.inRange(hsv, lower_blue, upper_blue)
 
     anded_res = cv2.bitwise_and(wheel_frame, wheel_frame, mask=mask)
-    contours, _ = cv2.findContours(cv2.Canny(anded_res, 255 / 3, 255), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    _,contours, _ = cv2.findContours(cv2.Canny(anded_res, 255 / 3, 255), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
     area_threshold = 400
     inds = []
@@ -123,8 +126,8 @@ def process_wheel():
 
     cv2.line(wheel_frame, (0, 200), (600, 200), (255, 255, 255), 1)
     cv2.line(wheel_frame, (0, 250), (600, 250), (255, 255, 255), 1)
-    steer(slope)
-    
+    #steer(slope)
+    sendData(slope)
     cv2.imshow('wheel', wheel_frame)  # [165:200, 326:500])
     cv2.imshow('mask', mask)  # [165:200, 326:500])
     cv2.getTrackbarPos('lower_b_0','mask')

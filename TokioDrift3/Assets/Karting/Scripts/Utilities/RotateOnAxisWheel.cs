@@ -16,14 +16,15 @@ public class RotateOnAxisWheel : MonoBehaviour
 	UdpClient client; //2
 	int port; //3
 	//public bool nextTutorial2;
-	public int ejex;
-
+	public double ejex;
+	public bool StateDetect;
 	void Start()
 	{
 		port = 5065; //1 
-		ejex = 0;
+		ejex = 0.0;
 		//nextTutorial2 = true;
 		InitUDP(); //4
+		StateDetect = false;
 	}
 
 	private void InitUDP()
@@ -46,6 +47,7 @@ public class RotateOnAxisWheel : MonoBehaviour
         {
 			client = new UdpClient(50003);
         }
+        int angulo;
 		while (true) //2
 		{
 			try
@@ -56,21 +58,41 @@ public class RotateOnAxisWheel : MonoBehaviour
 				string text = Encoding.UTF8.GetString(data); //5
 				//print(">> " + text);
 
-				if (String.Equals(text, "straight"))
+				if(text == "not"){
+					angulo = -1;					
+				}else{
+					angulo = int.Parse(text);
+				}
+				
+				
+				if(angulo != -1)
 				{
+					if(angulo > 85 && angulo < 95){
+						ejex = 0.0;
+						StateDetect = true;
+					}else if (angulo > 60 && angulo <= 85 ){
+						ejex = 0.125;
+						StateDetect = true;
+					}else if (angulo >= 95 && angulo <= 120){
+						ejex = -0.125;
+						StateDetect = true;
+					}else if (angulo > 30 && angulo <= 60){
+						ejex = 0.25;
+						StateDetect = true;
+					}else if (angulo > 120 && angulo <= 140){
+						ejex = -0.25;
+						StateDetect = true;
+					}else if (angulo <= 30 ){
+						ejex = 0.5;
+						StateDetect = true;
+					}else if (angulo > 140 ){
+						ejex = -0.5;
+						StateDetect = true;
+					}
+				
+				}else{
 					ejex = 0;
-				}
-				else if (String.Equals(text, "left"))
-				{
-					ejex = -1;
-				}
-				else if (String.Equals(text, "right"))
-				{
-					ejex = 1;
-				}
-				else
-				{
-					ejex = 0;
+					StateDetect = false;
 				}
 
 			}
@@ -93,7 +115,7 @@ public class RotateOnAxisWheel : MonoBehaviour
     
 	void Update()
 	{
-		transform.Rotate(ejex * rotationSpeed);
+		transform.Rotate((float)ejex * rotationSpeed);
 		/*if( transform.eulerAngles.y > -90 && transform.eulerAngles.y < 90 ){	
         			
         }else{
