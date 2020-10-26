@@ -32,6 +32,7 @@ public class SpeechRecognition : MonoBehaviour
         palabrasAccion.Add("stop", myCarController.StopCar);
         palabrasAccion.Add("defrente", myCarController.SteerStraightAhead);
         palabrasAccion.Add("turbo", myCarController.MaxSpeed);
+        
         palabrasAccion.Add("inicio", myCarController.ResetCar);
 
         reconocePalabras = new KeywordRecognizer(palabrasAccion.Keys.ToArray(), confidencialidad);
