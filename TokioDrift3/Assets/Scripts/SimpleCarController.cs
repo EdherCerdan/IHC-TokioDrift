@@ -27,6 +27,7 @@ public class SimpleCarController : MonoBehaviour
     private float posicionPedal = 0;
     private float posicionFreno = 0;
     private float posicionDireccion = 0;
+    public GameObject turbo;
 
     // encuentra el correspondiente modelo de la rueda
     // y le aplica correctamente el transform segun los datos del collider
@@ -69,6 +70,7 @@ public class SimpleCarController : MonoBehaviour
             {
                 brake = 0;
             }
+            
         }
 
         foreach (AxleInfo axleInfo in axleInfos)
@@ -96,6 +98,7 @@ public class SimpleCarController : MonoBehaviour
         posicionFreno = 0;
         posicionPedal += 0.2f;
         posicionPedal = Mathf.Clamp(posicionPedal, -1, 1);
+        turbo.SetActive(false);
     }
 
     public void MoveBackward()
@@ -143,6 +146,8 @@ public class SimpleCarController : MonoBehaviour
     {
         posicionPedal *= 100f;
         posicionPedal = Mathf.Clamp(posicionPedal, -1, 1);
+        turbo.SetActive(true);
+     
     }
 
     public void ResetCar()
